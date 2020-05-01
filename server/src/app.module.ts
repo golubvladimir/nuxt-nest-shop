@@ -5,6 +5,7 @@ import { CategoriesModule } from './categories/categories.module';
 import { ServeStaticModule } from "@nestjs/serve-static";
 import * as ORMConfig from './orm.config';
 import { join } from 'path';
+import { OrdersModule } from './orders/orders.module';
 
 @Module({
   imports: [
@@ -13,7 +14,8 @@ import { join } from 'path';
 		}),
 		TypeOrmModule.forRoot(ORMConfig),
   	ProductsModule,
-  	CategoriesModule
+  	CategoriesModule,
+  	OrdersModule
 	]
 })
 export class AppModule {}
