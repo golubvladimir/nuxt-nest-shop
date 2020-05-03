@@ -1,12 +1,12 @@
 import {MigrationInterface, QueryRunner} from "typeorm";
 import {Photo} from "../products/photo.entity";
 
-export class AddPhotosItems1588251402519 implements MigrationInterface {
+export class AddPhotos1588513841685 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<any> {
-    	const photosRepo = queryRunner.connection.getRepository(Photo);
+			const photosRepo = queryRunner.connection.getRepository(Photo);
 
-    	await photosRepo.insert([
+			await photosRepo.insert([
 				{
 					id: 1,
 					src: '/vegetables/pomodors.jpg',
