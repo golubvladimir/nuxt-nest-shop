@@ -26,8 +26,14 @@ export class Product {
 	photos: Photo[];
 
 	@ManyToMany(type => Order, order => order.products)
-	@JoinTable({
-		name: 'orders_products'
-	})
+	// @JoinTable({
+	// 	name: 'orders_products',
+	// 	joinColumn: {
+	// 		name: 'id_product', referencedColumnName: 'id'
+	// 	},
+	// 	inverseJoinColumn: {
+	// 		name: 'id_', referencedColumnName: 'id'
+	// 	}
+	// })
 	orders: Order[];
 }
