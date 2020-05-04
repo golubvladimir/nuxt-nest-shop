@@ -23,7 +23,11 @@
     height: 30px;
 
     &-primary {
+      color: #ffffff;
       background: #007bff;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 5px;
     }
   }
 </style>
