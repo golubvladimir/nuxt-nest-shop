@@ -6,11 +6,10 @@
       :name="name"
     >
     <p class="product-card__name">{{ name }}</p>
-    <p class="product-card__description">{{ description }}</p>
     <p class="product-card__price">{{ price }}</p>
     <Button
       class="product-card__btn"
-      onClick=""
+      level="primary"
     >Add to card</Button>
   </div>
 </template>
@@ -35,6 +34,21 @@
 <style lang="scss" scoped>
   .product-card {
     &__img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    &__price {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    &__btn {
       width: 100%;
     }
   }
