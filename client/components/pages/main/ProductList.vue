@@ -39,6 +39,7 @@
 
     &__item {
       width: 45%;
+      margin-bottom: 40px;
     }
   }
 </style>
