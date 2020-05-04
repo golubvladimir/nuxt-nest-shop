@@ -2,6 +2,13 @@
 export default {
   mode: 'universal',
   /*
+  ** Server settings
+  ** https://nuxtjs.org/faq/host-port/
+   */
+  server: {
+    port: 3001
+  },
+  /*
   ** Headers of the page
   */
   head: {
@@ -38,7 +45,16 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios'
   ],
+  /*
+  ** Axios settings
+  ** doc - https://axios.nuxtjs.org/
+  */
+  axios: {
+    baseURL: 'http://localhost:3000/api',
+    browserBaseURL: 'http://localhost:3000/api'
+  },
   /*
   ** Build configuration
   */
