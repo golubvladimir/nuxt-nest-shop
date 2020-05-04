@@ -52,8 +52,8 @@ export default {
   ** doc - https://axios.nuxtjs.org/
   */
   axios: {
-    baseURL: 'http://localhost:3000/api',
-    browserBaseURL: 'http://localhost:3000/api'
+    baseURL: 'http://localhost:3000',
+    browserBaseURL: 'http://localhost:3000'
   },
   /*
   ** Build configuration
