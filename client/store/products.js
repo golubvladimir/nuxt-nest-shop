@@ -1,4 +1,4 @@
-export const state = {
+export const state = () => {
   products: []
 };
 
@@ -11,8 +11,8 @@ export const mutations = {
 };
 
 export const actions = {
-  async getAllProducts({ commit }) {
-    const AllProducts = await this.$axios.$get('/products');
+  async getProducts({ commit }) {
+    const AllProducts = await this.$axios.$get('api/products');
 
     commit('setProducts', AllProducts);
   },
