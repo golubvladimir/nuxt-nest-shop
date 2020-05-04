@@ -11,7 +11,7 @@ export class ProductsService {
 	) {}
 
 	getAllProducts(): Promise<Product[]> {
-		return this.productsRepository.find({ relations: ["category"] });
+		return this.productsRepository.find({ relations: ["category", "photos"] });
 	}
 
 	getProductById(id: string): Promise<Product> {
