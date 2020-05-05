@@ -1,6 +1,6 @@
 <template>
   <div class="cart">
-    <Link class="cart__link" to="/card">
+    <Link class="cart__link" to="/cart">
       <img
         class="cart__icon"
         src="~static/icons/cart.svg" alt="Cart"
