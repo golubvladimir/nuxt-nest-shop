@@ -12,5 +12,5 @@ export class Photo {
 	src: string;
 
 	@ManyToOne(type => Product, product => product.photos)
-	product: number;
+	product: Product;
 }
