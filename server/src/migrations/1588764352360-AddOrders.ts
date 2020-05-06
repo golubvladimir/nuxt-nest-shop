@@ -2,7 +2,7 @@ import {MigrationInterface, QueryRunner} from "typeorm";
 import {Order} from "../orders/order.entity";
 import {Product} from "../products/product.entity";
 
-export class AddProductsToOrders1588513857172 implements MigrationInterface {
+export class AddOrders1588764352360 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<any> {
 			const ordersRepo = queryRunner.connection.getRepository(Order);
@@ -10,15 +10,15 @@ export class AddProductsToOrders1588513857172 implements MigrationInterface {
 
 			await ordersRepo.insert([
 				{
-					id: 20
+					id: 1
 				},
 				{
-					id: 21
+					id: 2
 				}
 			]);
 
-			const order1 = await ordersRepo.findOne(20, { relations: ['products'] });
-			const order2 = await ordersRepo.findOne(21, { relations: ['products'] });
+			const order1 = await ordersRepo.findOne(1, { relations: ['products'] });
+			const order2 = await ordersRepo.findOne(2, { relations: ['products'] });
 
 			const product1 = await productsRepo.findOne(1);
 			const product2 = await productsRepo.findOne(2);
