@@ -34,7 +34,7 @@
 <style lang="scss" scoped>
   .menu {
     margin: 0;
-    padding: 20px 0;
+    padding: 0;
 
     &__item {
       margin-right: 15px;
