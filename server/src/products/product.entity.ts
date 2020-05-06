@@ -19,8 +19,11 @@ export class Product {
 	@Column()
 	description: string;
 
+	@Column()
+	price: number;
+
 	@ManyToOne(type => Category, category => category.products)
-	category: number;
+	category: Category;
 
 	@OneToMany(type => Photo, photo => photo.product)
 	photos: Photo[];
