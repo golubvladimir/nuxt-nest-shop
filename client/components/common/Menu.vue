@@ -3,6 +3,7 @@
     <Link
       class="menu__item"
       v-for="item in items"
+      :key="item.id"
       :to="item.to"
     >{{ item.title }}</Link>
   </ul>
@@ -16,10 +17,12 @@
     data: () => ({
       items: [
         {
+          id: 1,
           title: 'Home',
           to: '/'
         },
         {
+          id: 2,
           title: 'Catalog',
           to: '/catalog'
         }
