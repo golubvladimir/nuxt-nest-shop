@@ -2,7 +2,7 @@
   <div class="main-page">
     <Container>
       <Row>
-        <Column size="6">
+        <Column size="12">
           <ProductsList
             :products="products"
           />
