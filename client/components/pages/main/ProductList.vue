@@ -38,7 +38,7 @@
     flex-wrap: wrap;
 
     &__item {
-      width: 45%;
+      width: 21%;
       margin-bottom: 40px;
     }
   }
