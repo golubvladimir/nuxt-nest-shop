@@ -6,7 +6,7 @@
       :name="name"
     >
     <p class="product-card__name">{{ name }}</p>
-    <p class="product-card__price">{{ price }}</p>
+    <p class="product-card__price">{{ price }} $</p>
     <Button
       class="product-card__btn"
       level="primary"
@@ -38,13 +38,13 @@
       margin-bottom: 10px;
     }
 
-    &__title {
+    &__name {
       font-size: 18px;
       margin-bottom: 10px;
     }
 
     &__price {
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 20px;
     }
 
