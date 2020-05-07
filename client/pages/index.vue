@@ -3,6 +3,10 @@
     <Container>
       <Row>
         <Column size="12">
+          <Title
+            size="1"
+            class="main-page__title"
+          >New products</Title>
           <ProductsList
             :products="products"
           />
@@ -18,6 +22,7 @@
   import Container from '@/components/grid/Container';
   import Row from '@/components/grid/Row';
   import Column from '@/components/grid/Column';
+  import Title from '@/components/elements/Title';
   import ProductsList from '@/components/pages/main/ProductList';
 
   export default {
@@ -26,6 +31,7 @@
       Container,
       Row,
       Column,
+      Title,
       ProductsList
     },
     middleware: ['pages/main'],
@@ -37,6 +43,11 @@
   }
 </script>
 
-<style>
+<style lang="scss" scoped>
+  .main-page {
 
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
 </style>
