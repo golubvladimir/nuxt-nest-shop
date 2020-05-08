@@ -21,8 +21,8 @@
   import Container from '@/components/grid/Container';
   import Row from '@/components/grid/Row';
   import Column from '@/components/grid/Column';
-  import Menu from '@/components/common/Menu';
-  import Cart from '@/components/common/Cart';
+  import Menu from '@/components/layouts/main/Menu';
+  import Cart from '@/components/layouts/main/Cart';
 
   export default {
     name: "HeaderPage",
