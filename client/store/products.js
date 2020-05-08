@@ -1,7 +1,7 @@
 export const state = () => ({
   products: [],
   page: 0,
-  perPage: 4,
+  perPage: 8,
   total: 0,
   totalPage: 0
 });
@@ -18,14 +18,16 @@ export const mutations = {
 
 export const actions = {
   async getProducts({ commit, state }) {
-    const products = await this.$axios.$get('api/products', {
+    const result = await this.$axios.$get('api/products', {
       params: {
         page: state.page,
         perPage: state.perPage
       }
     });
 
-    commit('setProducts', products);
+    commit('setProducts', result.products);
+    commit('setTotal', result.total);
+    commit('setTotalPage');
   },
   async getProductsMain({ commit }) {
     const result = await this.$axios.$get('api/products', {
@@ -36,8 +38,6 @@ export const actions = {
     });
 
     commit('setProducts', result.products);
-    commit('setTotal', result.total);
-    commit('setTotalPage', result.totalPage);
   }
 
 };
