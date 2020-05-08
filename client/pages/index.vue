@@ -23,7 +23,7 @@
   import Row from '@/components/grid/Row';
   import Column from '@/components/grid/Column';
   import Title from '@/components/elements/Title';
-  import ProductsList from '@/components/pages/main/ProductList';
+  import ProductsList from '@/components/pages/common/ProductList';
 
   export default {
     name: 'main-page',
