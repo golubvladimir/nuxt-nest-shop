@@ -24,6 +24,8 @@
     padding-right: 15px;
     padding-left: 15px;
     position: relative;
+    flex-shrink: 0;
+    flex-grow: 0;
 
     &-offset {
       &-12 {
@@ -77,50 +79,62 @@
 
     &-12 {
       width: (100% / 12) * 12;
+      flex-basis: (100% / 12) * 12;
     }
 
     &-11 {
       width: (100% / 12) * 11;
+      flex-basis: (100% / 12) * 11;
     }
 
     &-10 {
       width: (100% / 12) * 10;
+      flex-basis: (100% / 12) * 10;
     }
 
     &-9 {
       width: (100% / 12) * 9;
+      flex-basis: (100% / 12) * 9;
     }
 
     &-8 {
       width: (100% / 12) * 8;
+      flex-basis: (100% / 12) * 8;
     }
 
     &-7 {
       width: (100% / 12) * 7;
+      flex-basis: (100% / 12) * 7;
     }
 
     &-6 {
       width: (100% / 12) * 6;
+      flex-basis: (100% / 12) * 6;
     }
 
     &-5 {
       width: (100% / 12) * 5;
+      flex-basis: (100% / 12) * 5;
     }
 
     &-4 {
       width: (100% / 12) * 4;
+      flex-basis: (100% / 12) * 4;
     }
 
     &-3 {
       width: (100% / 12) * 3;
+      flex-basis: (100% / 12) * 3;
     }
 
     &-2 {
       width: (100% / 12) * 2;
+      flex-basis: (100% / 12) * 2;
     }
 
     &-1 {
       width: (100% / 12) * 1;
+      flex-basis: (100% / 12) * 1;
     }
   }
 </style>
